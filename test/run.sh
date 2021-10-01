@@ -12,6 +12,21 @@ ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
+rm -rf./gradlew build
+ret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew build
+ret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew build
+ret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
 rm -rf build
 cd ../initial
 ./mvnw clean compile
@@ -26,11 +41,7 @@ exit $retcd ../initial
 
 ./mvnw clean compile
 ret=$?
-if [ $ret -ne 0 ]; then
-exit $ret
-fi
-rm -rf target
-./gradlew compileJava
+ava
 ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
