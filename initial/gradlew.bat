@@ -4,6 +4,7 @@
 @rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
+
 @rem
 @rem      https://www.apache.org/licenses/LICENSE-2.0
 @rem
@@ -31,7 +32,10 @@ set APP_HOME=%DIRNAME%
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
-
+$ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew build
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
 
