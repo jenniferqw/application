@@ -10,5 +10,8 @@ public class HelloController {
 	public String index() {
 		return "Welcome to our code!!";
 	}
-
+$ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew build
 }
