@@ -19,20 +19,25 @@ exit $ret
 fi
 rm -rf./gradlew build
 ret=$?
-if [ $ret -ne 0 ]; then
-exit $ret
-fi
-rm -rf./gradlew build
+if [ 
 ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
 rm -rf build
+
+$ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew build
 cd ../initial
 ./mvnw clean compile
 ret=$?
 if [ $ret -ne 0 ]; then
-exit $retcd ../initial
+exit $ret$ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf./gradlew buildcd ../initial
 
 ./mvnw clean compile
 ret=$?
